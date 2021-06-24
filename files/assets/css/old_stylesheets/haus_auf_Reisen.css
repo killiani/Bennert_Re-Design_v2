@@ -1,0 +1,63 @@
+/* haus_auf_Reisen.css */
+.haus_icon_wrapper_mobile {
+    display: none
+}
+
+.haus_icon_wrapper:hover {
+    transition: 0.4s;
+    transform: translateY(-10px)
+}
+
+.haus_line p {
+    text-transform: uppercase;
+    margin: -9px 0 1px 0;
+    line-height: 23px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #6F1619
+}
+
+.haus_icon img {
+    filter: invert(9%) sepia(90%) saturate(2996%) hue-rotate(345deg) brightness(89%) contrast(94%);
+    width: 90px
+}
+
+.haus_icon_wrapper {
+    position: absolute;
+    text-decoration: none;
+    transition: 0.4s;
+    width: 101px;
+    background-color: #FFD700;
+    padding: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 67%;
+    top: 371px;
+    border-radius: 50%;
+    box-shadow: aliceblue;
+    box-shadow: -1px -5px 59px -15px rgba(157, 30, 30);
+    height: 101px
+}
+
+.haus_icon_wrapper_mobile {
+    position: relativ;
+    text-decoration: none;
+    background-color: #F8FAFA;
+    padding: 19px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    right: 0;
+    top: 0;
+    height: 22px
+}
+
+.haus_inner_wrapper {
+    width: 233px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-direction: row-reverse
+}

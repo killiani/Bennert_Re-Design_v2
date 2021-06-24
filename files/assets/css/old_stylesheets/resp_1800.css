@@ -1,0 +1,11 @@
+/* resp_1800.css */
+
+@media screen and (min-width: 1800px){
+    .left-image_2, .left-image_big {
+        right: 13vw
+    }
+
+    .centered-image {
+        right: 400px
+    }
+}

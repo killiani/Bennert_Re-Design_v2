@@ -1,0 +1,11 @@
+
+    </div>
+  </div>
+
+  <nav class="slider-control">
+    <a href="#" class="slider-prev"><img src="files/assets/icons/arrow_left.svg"></a>
+    <span class="slider-menu"></span>
+    <a href="#" class="slider-next"><img src="files/assets/icons/arrow_right.svg"></a>
+  </nav>
+
+</div>

@@ -1,0 +1,338 @@
+@import "variables";
+
+//_________________________________________Quellen
+
+.quellen{
+  p{
+    color: $gray;
+    margin: 0;
+  }
+}
+
+.flexbox_1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+//_________________________________________Slider
+
+//_________________________Bildunterschrift
+.ce_sliderStart{
+  figcaption{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    color: white;
+    font-style: italic;
+    height: 25px;
+    padding: 10px 0 0 0;
+  }
+}
+
+
+.slider-menu{
+  b{
+    font-size: 0;
+    //display: inline-block;
+    display: none;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border: 3px solid $mint;
+    margin: 0 5px;
+    border-radius: 50%;
+
+  }
+  b.active{
+    background-color: $mint;
+  }
+}
+
+
+.slider-control .slider-menu {
+  width:100%;
+  left: unset;
+  margin-left: unset;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.content-slider {
+  width: 89%;
+  margin: 0 auto;
+}
+
+.ce_sliderStart{
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  .image_container img{
+    width: $content_size;
+  }
+  table{
+    margin: 20px auto;
+    font-style: italic;
+  }
+}
+
+.slider-prev, .slider-next{
+  width: 60px;
+  height: 60px;
+  img{
+    margin: 10px
+  }
+}
+
+.slider-control{
+  position: unset;
+  a{
+    top: 45%;
+  }
+}
+
+.slider-control .slider-menu {
+  top: unset !important;
+  bottom: 50px;
+}
+
+.slider-control .slider-menu {
+  top: unset;
+}
+
+
+
+//_________________________________________Akkordoen
+
+.ce_accordion{
+  max-width: 800px;
+  margin: 0 auto;
+  span, .ce_text{
+    padding-left: 173px;
+  }
+  .active{
+    .open{
+      display: inherit;
+    }
+    .close{
+      display: none;
+    }
+    color: black !important;
+  }
+}
+
+.icon_accord{
+  width: 30px;
+  cursor: pointer;
+  float: right;
+  transform: translateY(0);
+  filter: $icon_mint;
+  margin-top: 8px;
+}
+
+.open{
+  display: none;
+}
+
+.toggler{
+  background-color: unset;
+  color: black;
+  border-bottom: 1px solid $mint;
+  transition: 0.4s;
+}
+.toggler:hover{
+  color: $mint;
+  transition: 0.4s;
+}
+
+.ui-accordion-header-icon {
+  display: none;
+}
+
+
+
+//________________________________________Video
+
+.ce_vimeo {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: auto;
+  //border: 5px solid $green;
+}
+
+.ce_vimeo iframe {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
+.ce_youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: auto;
+}
+
+.ce_youtube iframe {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+//_______________________________________Suche
+
+.suche{
+  input {
+    border-radius: 50px;
+    color: black;
+    font-family: $font;
+    background-color: white;
+    border-style: none;
+    float: left;
+    height: 42px;
+    text-transform: unset;
+    font-size: 13px;
+  }
+  #ctrl_1{
+    height: 25px;
+    width: 200px;
+    float: left;
+    padding-left: $space;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  .widget-submit{
+    background-color: unset;
+    width: 27px;
+    position: absolute;
+    z-index: 2;
+    transform: translate(190px, -7px);
+  }
+}
+
+//________________________________________Sticky-Container
+.sticky-container {
+  transition: 0.4s ease-in-out 0.2s;
+  z-index: 3;
+  position: fixed;
+  right: -159px;
+  top: 50vh;
+  height: 70px;
+  border-radius: 4px;
+  width: 240px;
+  background-color: white;
+  padding-top: 5px;
+  box-shadow: 9px 4px 10px 5px rgba(48, 62, 0, 0.1);
+
+  a {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  table{
+    td{
+      text-align: center;
+      a:hover{
+        color: $secondary;
+      }
+    }
+    td:first-child{
+      width: 20% !important;
+    }
+  }
+}
+
+
+.sticky-container:hover{
+  transition: 0.4s ease-in-out 0.2s;
+  right: -5px;
+}
+
+
+//_______________________________________Event & News
+
+.archiv .layout_teaser{
+  position: relative;
+}
+
+.layout_full{
+  h2 {
+    display: none;
+  }
+  p{
+    margin: 20px 0;
+  }
+  img{
+    margin: 0;
+  }
+}
+
+.layout_teaser, .layout_short{
+
+  .time {
+    width: 183px;
+    float: left;
+    font-size: 34px;
+    font-weight: 800;
+  }
+  .ce_text{
+    width: 511px;
+    float: left;
+  }
+
+  .more{
+    width: 248px;
+    float: right;
+    span{
+      margin-right: 20px;
+      text-align: right;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+
+  p.more{
+    text-align: right;
+  }
+
+  p.more:hover{
+    a{
+      color: $secondary;
+      transition: 0.4s;
+      img{
+        //filter: $green_icon;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  img{
+    width: 41px;
+    transform: translate(-11px, -10px);
+    float: right;
+  }
+
+  p.info{
+    float: left;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .headline a{
+    font-weight: 600;
+    font-style: italic;
+  }
+
+}
+
+.mod_eventlist{
+  border-bottom: 1px solid gray;
+}
+
+

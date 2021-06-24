@@ -1,0 +1,98 @@
+@import "variables";
+
+.mod_mobile_menu {
+/*  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: white;
+  z-index: 999999;*/
+}
+
+//burger
+
+
+/*.mobile_menu_nav{
+  .nav_punkte_einzeln{
+    max-width: unset;
+  }
+  position: relative;
+  top: 200px;
+  list-style: none;
+  width: 100%;
+  li{
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 2px dotted white;
+    a{
+      text-transform: uppercase;
+      color: white;
+      padding-left: 5px;
+    }
+  }
+}*/
+
+$burger_right: 50%;
+$burger_width: 58px;
+$burger_pos_x: translateX(295px);
+
+.burger_1{
+  border-radius: 50%;
+  right: $burger_right;
+  transform: $burger_pos_x;
+  position: absolute;
+  top: 116px;
+  cursor: pointer;
+  width: $burger_width;
+  z-index: 9998;
+
+}
+.burger_2{
+  border-radius: 50%;
+  right: $burger_right;
+  transform: $burger_pos_x;
+  position: absolute;
+  top: 116px;
+  cursor: pointer;
+  width: $burger_width;
+  z-index: 9999;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.burger_2:hover{
+  opacity: 1;
+  transition: 0.4s;
+}
+
+
+.menu-close_1{ //X im Mobile Menu
+  img:first-child{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+  }
+  img:nth-child(2){
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+  }
+  position: relative;
+  width: 89px;
+  float: right;
+  top: 116px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+/*.burger_1:hover, .burger_2:hover, .menu-close_1 img:hover{
+  -webkit-box-shadow: 0px -1px 34px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 34px -14px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 34px -14px rgba(0,0,0,0.75);
+  opacity: 1;
+  transition: 0.4s;
+  .menu-close_1 img:first-child{
+    opacity: 1;
+  }
+}*/

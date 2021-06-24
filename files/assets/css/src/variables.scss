@@ -1,0 +1,55 @@
+$blue_dark: #122e5d;
+$blue_light: #669bbb;
+$blue_light_plus: #A8CBE0;
+
+$yellow: #DCC25E;
+
+$secondary: #b82837;
+
+@mixin bg_grad{
+  background: rgb(18,46,93);
+  background: linear-gradient(180deg, rgba(18,46,93,1) 0%, rgba(102,155,187,1) 100%);
+}
+
+$mint: #46AC31;
+$mint_dark: #3e7f29;
+
+$gray: #8d8d8d;
+
+
+$space: 20px;
+
+@mixin shadow{
+  box-shadow: 0 34px 38px -34px rgba(0,0,0,0.3);
+}
+
+@mixin trans{
+  transition: 0.4s;
+}
+
+$watermark: url("../icons/Renat-Bau-Logo_mark.svg");
+
+@mixin bg{
+  background: $watermark no-repeat 105% 0, $mint;
+  //background: linear-gradient(left, rgba($grad_full, $opacity), rgba($grad_full, $opacity)), url($watermark) no-repeat;
+}
+
+$font: 'Lato';
+$font_2: 'Barlow Condensed';
+
+$green_icon: invert(81%) sepia(15%) saturate(1518%) hue-rotate(26deg) brightness(92%) contrast(93%);
+
+$content_size: 990px;
+$content_size_m: 1220px;
+$content_size_l: 1300px;
+
+$container1_3: ($content_size/3)-$space/2;
+$container2_3: (($content_size/3)*2)-$space;
+
+$icon_mint: invert(65%) sepia(24%) saturate(4507%) hue-rotate(67deg) brightness(91%) contrast(69%);
+$icon_white: invert(93%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(105%) contrast(109%);
+$icon_orange: invert(61%) sepia(90%) saturate(1451%) hue-rotate(360deg) brightness(102%) contrast(104%);
+$icon_blue:  invert(66%) sepia(74%) saturate(7448%) hue-rotate(175deg) brightness(106%) contrast(102%);
+$icon_red: invert(18%) sepia(85%) saturate(2383%) hue-rotate(337deg) brightness(98%) contrast(91%);
+$icon_black: invert(0%) sepia(1%) saturate(7484%) hue-rotate(332deg) brightness(88%) contrast(98%);
+$icon_yellow: invert(80%) sepia(78%) saturate(1457%) hue-rotate(359deg) brightness(103%) contrast(103%);

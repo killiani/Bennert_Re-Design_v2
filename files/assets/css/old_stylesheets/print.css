@@ -1,0 +1,11 @@
+/* print.css */
+@media print{
+    #header .mod_form, #header .geschichte, #main .print_link, #footer {
+        display: none
+    }
+
+    #main .ce_galerie {
+        margin-left: 5%
+    }
+}
+

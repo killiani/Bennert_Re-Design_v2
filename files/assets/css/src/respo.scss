@@ -1,0 +1,13 @@
+@import "variables";
+
+.mobile{display: none}
+.desktop{display: unset}
+
+@media screen and (max-width: $content_size){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: unset;
+  }
+}

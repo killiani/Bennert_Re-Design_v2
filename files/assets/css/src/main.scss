@@ -1,0 +1,55 @@
+@import "variables";
+
+h3{
+  color: $blue_light;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#main{
+  .mod_article{
+    margin: 30px 0;
+  }
+}
+
+.ce_text{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul{
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $blue_light; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 0em; /* Also needed for space (tweak if needed) */
+}
+
+
+h2.claim{
+  font-style: italic;
+  color: white;
+  text-transform: unset;
+  font-weight: 300;
+  font-size: 2.3em;
+}
+
+.ansprechpartner{
+  background-color: $blue_light_plus;
+  padding: 20px 0;
+  a,p,h3{
+    color: white;
+  }
+  h3{
+    border-bottom: 2px solid white;
+    padding: 0 0 10px 0;
+  }
+  .ce_text:first-child{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+  }
+}
