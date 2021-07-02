@@ -1,5 +1,19 @@
 @import "variables";
 
+a{
+  color: $blue_light;
+  transition: 0.4s;
+}
+
+a:hover{
+  color: $blue_dark;
+  transition: 0.4s;
+}
+
+.mod_article > .first{
+  margin-top: 50px;
+}
+
 h3{
   color: $blue_light;
   text-transform: uppercase;
@@ -53,7 +67,7 @@ h2.claim{
   font-size: 2.3em;
 }
 
-.ansprechpartner{
+#main .ansprechpartner{
   background-color: $blue_light_plus;
   padding: 20px 0;
   display: flex;
@@ -61,8 +75,14 @@ h2.claim{
   flex-wrap: wrap;
   justify-content: space-around;
   .ansprechpartner_info{
+    width: 50%;
     a,p,h3{
       color: white;
+      transition: 0.4s;
+    }
+    a:hover{
+      color: $blue_dark;
+      transition: 0.4s;
     }
     h3{
       border-bottom: 2px solid white;
@@ -81,6 +101,17 @@ h2.claim{
     }
   }
 
+  .ce_text{
+    strong,td{
+      color: white;
+    }
+    table{
+      tr{
+        border: unset;
+        margin: unset;
+      }
+    }
+  }
 }
 
 
@@ -101,4 +132,12 @@ h2.claim{
   margin-bottom: 30px;
   background-color: $blue_light;
   border: 0px
+}
+
+.stoerer_1{
+  width: 115px;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-46%) translateX(380px);
+  z-index: 2;
 }

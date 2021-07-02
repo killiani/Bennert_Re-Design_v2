@@ -127,7 +127,8 @@ body {
 }
 
 #main .print_link span {
-    font-size: 1.1em
+    font-size: 1.1em;
+    color: #669bbb;
 }
 
 #main .mod_newsreader .galleria-theme-classic {
