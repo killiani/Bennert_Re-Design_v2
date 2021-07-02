@@ -1,13 +1,176 @@
 @import "variables";
 
-.mobile{display: none}
-.desktop{display: unset}
+.mobile {
+  display: none
+}
 
-@media screen and (max-width: $content_size){
-  .desktop{
+.desktop {
+  display: inherit
+}
+
+.sc_1 {
+  display: flex;
+}
+
+.sc_2 {
+  display: none
+}
+
+@media screen and (max-width: $content_size) {
+  .desktop {
     display: none;
   }
-  .mobile{
+  .mobile {
     display: unset;
   }
+
+  #main {
+    margin: 0 20px;
+  }
+
+
+  //________________________________News
+
+  .news_short_image_text_wrapper {
+    figure, a, img {
+      width: 100%;
+    }
+  }
+
+  //________________________________Ansprechpartner
+
+  .ansprechpartner_info {
+    margin: 20px;
+  }
+
+  //________________________________Header
+  #header {
+    .header_logo img {
+      width: 120px;
+    }
+
+    .geschichte {
+      max-width: 120px;
+      margin-top: 90px;
+    }
+
+    h2.claim {
+      font-size: 0.9em;
+      height: 19px;
+      padding: 3px 0 0 0;
+    }
+
+    .wrapper-headline-text {
+      height: auto;
+      padding: 10px 0;
+    }
+  }
+
+  //___________________________________Menu
+
+
+  .mobile_menu {
+    .inner nav.mod_navigation{
+      margin: 143px 20px 0 20px;
+    }
+
+    .mobile_menu_footer {
+      width: auto;
+
+      .imprint {
+        display: none;
+      }
+    }
+
+    ul.level_1{
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+
+  }
+
+  .burger_1, .burger_2 {
+    right: 20px;
+    transform: unset;
+    top: 20px;
+  }
+
+
+
+
+
+
+
+
+  //_________________________________Footer
+
+  #footer {
+
+    .sc_1 {
+      display: none;
+    }
+
+    .sc_2 {
+      display: flex;
+    }
+
+    .inside{
+      width: 100%;
+    }
+
+    .footer_content_wrapper {
+
+      flex-wrap: wrap;
+      justify-content: center;
+      width: unset;
+
+      .logo_footer{
+        width: 40%;
+        margin: 0 0 15px 0;
+      }
+
+      .footer_content {
+
+        .row_1 {
+          justify-content: center;
+          height: unset;
+        }
+
+        .row_2 {
+          height: auto;
+
+          ul {
+            display: inherit;
+            margin: 15px auto;
+            width: 100px;
+
+            li {
+              margin: 10px 10px 0 0;
+              text-align: center;
+            }
+
+            li::after {
+              content: unset;
+              margin: unset;
+            }
+          }
+        }
+
+        .row_3 {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+          text-align: center;
+          padding: 15px 0;
+
+          .ce_text {
+            margin: unset;
+          }
+        }
+      }
+    }
+  }
+
 }

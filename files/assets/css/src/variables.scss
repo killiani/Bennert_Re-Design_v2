@@ -4,19 +4,29 @@ $blue_light_plus: #A8CBE0;
 
 $yellow: #DCC25E;
 
-$secondary: #b82837;
+$secondary: #669bbb;
+
+
+$grad_full_test: linear-gradient(140deg, rgba(86,180,135,1) 0%, rgba(201,200,78,1) 100%);
+$grad_full: linear-gradient(180deg, rgba(18,46,93,1) 0%, rgba(102,155,187,1) 100%);
+$watermark: url("../icons/bennert_logo_word_opacity.svg");
+$opacity: 1;
+
+@mixin bg_grad_mark{
+  background: rgb(18,46,93);
+  background: $watermark no-repeat 105% 0, $grad_full;
+  background-position: center;
+  background-size: 90%;
+}
 
 @mixin bg_grad{
   background: rgb(18,46,93);
-  background: linear-gradient(180deg, rgba(18,46,93,1) 0%, rgba(102,155,187,1) 100%);
+  background: $grad_full;
 }
 
-$mint: #46AC31;
-$mint_dark: #3e7f29;
 
+$mint: green;
 $gray: #8d8d8d;
-
-
 $space: 20px;
 
 @mixin shadow{
@@ -27,10 +37,8 @@ $space: 20px;
   transition: 0.4s;
 }
 
-$watermark: url("../icons/Renat-Bau-Logo_mark.svg");
 
 @mixin bg{
-  background: $watermark no-repeat 105% 0, $mint;
   //background: linear-gradient(left, rgba($grad_full, $opacity), rgba($grad_full, $opacity)), url($watermark) no-repeat;
 }
 

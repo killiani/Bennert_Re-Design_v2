@@ -111,9 +111,6 @@
 .ce_accordion{
   max-width: 800px;
   margin: 0 auto;
-  span, .ce_text{
-    padding-left: 173px;
-  }
   .active{
     .open{
       display: inherit;
@@ -128,10 +125,7 @@
 .icon_accord{
   width: 30px;
   cursor: pointer;
-  float: right;
-  transform: translateY(0);
-  filter: $icon_mint;
-  margin-top: 8px;
+  filter: $icon_blue;
 }
 
 .open{
@@ -141,11 +135,11 @@
 .toggler{
   background-color: unset;
   color: black;
-  border-bottom: 1px solid $mint;
+  border-bottom: 1px solid $blue_light;
   transition: 0.4s;
 }
 .toggler:hover{
-  color: $mint;
+  //color: $mint;
   transition: 0.4s;
 }
 
@@ -256,6 +250,36 @@
 
 
 //_______________________________________Event & News
+.mod_newslist{
+  max-width: 800px;
+  margin: 0 auto;
+  a{
+    color: $blue_dark;
+    transition: 0.4s;
+  }
+  a:hover{
+    transition: 0.4s;
+    color: $blue_light;
+  }
+  .layout_short{
+    border-bottom: 1px solid $blue_light;
+    margin-bottom: 25px;
+  }
+  .last{
+    border-bottom: unset !important;
+  }
+}
+
+.news_short_image_text_wrapper{
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  flex-wrap: wrap;
+  .ce_text{
+    max-width: 530px;
+  }
+}
+
 
 .archiv .layout_teaser{
   position: relative;
@@ -282,13 +306,11 @@
     font-weight: 800;
   }
   .ce_text{
-    width: 511px;
-    float: left;
+    //width: 511px;
+    //float: left;
   }
 
   .more{
-    width: 248px;
-    float: right;
     span{
       margin-right: 20px;
       text-align: right;
@@ -313,15 +335,13 @@
   }
 
   img{
-    width: 41px;
-    transform: translate(-11px, -10px);
-    float: right;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
   }
 
   p.info{
-    float: left;
-    font-weight: 600;
-    font-style: italic;
+
   }
 
   .headline a{

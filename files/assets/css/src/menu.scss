@@ -1,35 +1,115 @@
 @import "variables";
 
-.mod_mobile_menu {
-/*  position: absolute;
-  top: 30px;
-  right: 30px;
-  background-color: white;
-  z-index: 999999;*/
+html.mobile_menu_active{
+  overflow-y: hidden;
 }
 
-//burger
+//_____________________________Desktop MobileMenu
 
 
-/*.mobile_menu_nav{
-  .nav_punkte_einzeln{
-    max-width: unset;
-  }
-  position: relative;
-  top: 200px;
-  list-style: none;
-  width: 100%;
-  li{
-    cursor: pointer;
-    width: 100%;
-    border-bottom: 2px dotted white;
-    a{
-      text-transform: uppercase;
+.mobile_menu{
+
+  .inner{
+    @include bg_grad_mark;
+    overflow: unset;
+
+    nav.mod_navigation{
+      margin: 370px auto 0 auto;
+      max-width: 1200px;
+    }
+
+
+    ul li::before{
+      content: unset ;
+    }
+    a, strong{
+      text-decoration: none;
       color: white;
-      padding-left: 5px;
+      text-transform: uppercase;
+      transition: 0.4s;
+    }
+    strong.active{
+      color: $yellow;
+    }
+    a:hover{
+      transition: 0.4s;
+      color: $yellow;
+    }
+
+
+
+    ul.level_1{
+      display: flex;
+      justify-content: space-between;
+      li.submenu{
+        width: 100%;
+        a.submenu, strong.submenu{
+          width: 100%;
+          display: block;
+          border-bottom: 2px solid white;
+          margin: 0 0 10px 0;
+          padding: 0 0 10px 0;
+          font-size: 1.1em;
+          font-weight: 750;
+        }
+      }
+    }
+    ul.level_2{
+      li{
+        width: 100%;
+        a, strong.active{
+          width: 100%;
+          display: block;
+          border-bottom: 1px solid white;
+          margin: 0 0 10px 0;
+          padding: 0 0 10px 0;
+        }
+      }
+      li.last{
+        a, strong.active{
+          border-bottom: 1px solid transparent;
+        }
+      }
     }
   }
-}*/
+
+  .mobile_menu_footer{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid white;
+    padding: 30px 0 0 0;
+    width: $content_size;
+    margin: 0 0 30px 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    //social_icons steht global in main
+
+    .imprint{
+      .ce_text{
+        p,a{
+          font-size: 14px;
+          line-height: 1.5;
+          text-decoration: none;
+          transition: 0.4s;
+          color: white;
+          text-transform: unset;
+        }
+        a:hover{
+          transition: 0.4s;
+          color:  $yellow;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+//_____________________________Ende Desktop MobileMenu
 
 $burger_right: 50%;
 $burger_width: 58px;
@@ -65,34 +145,6 @@ $burger_pos_x: translateX(295px);
 }
 
 
-.menu-close_1{ //X im Mobile Menu
-  img:first-child{
-    border-radius: 50%;
-    position: absolute;
-    z-index: 2;
-  }
-  img:nth-child(2){
-    border-radius: 50%;
-    position: absolute;
-    z-index: 3;
-    opacity: 0;
-  }
-  position: relative;
-  width: 89px;
-  float: right;
-  top: 116px;
-  cursor: pointer;
-  z-index: 2;
+.menu-close{
+  width: 200px;
 }
-
-
-/*.burger_1:hover, .burger_2:hover, .menu-close_1 img:hover{
-  -webkit-box-shadow: 0px -1px 34px -14px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px -1px 34px -14px rgba(0,0,0,0.75);
-  box-shadow: 0px -1px 34px -14px rgba(0,0,0,0.75);
-  opacity: 1;
-  transition: 0.4s;
-  .menu-close_1 img:first-child{
-    opacity: 1;
-  }
-}*/

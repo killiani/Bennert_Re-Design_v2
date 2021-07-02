@@ -1,17 +1,4 @@
 /* Basic.css */
-hr {
-    height: 3px;
-    background-color: #c8c9c9;
-    border: 0px
-}
-
-#main hr {
-    height: 3px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #c8c9c9;
-    border: 0px
-}
 
 a, body, div, em, input, label, legend, li, ol, p, select, span, strong, td, th, textarea, u, ul {
     font-family: 'Lato', sans-serif !important
@@ -22,7 +9,8 @@ span.invisible {
 }
 
 #main p, #main a, #main li {
-    font: 1.3em 'Lato', sans-serif
+    font: 1.3em 'Lato', sans-serif;
+    line-height: 1.5;
 }
 
 #main a {
@@ -42,7 +30,7 @@ h1 {
     padding-top: 0;
     padding-bottom: 0;
     font: 1.45em/1em 'Lato', sans-serif;
-    color: #181716;
+    color: #669bbb;
     text-transform: uppercase;
     font-weight: 900
 }
@@ -70,7 +58,6 @@ h1 {
 #right a:hover {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
-    color: #919393;
     font-weight: 400
 }
 
@@ -81,7 +68,6 @@ h1 {
 }
 
 #right table {
-    height: 38px;
     height: 38px !important
 }
 
@@ -89,7 +75,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 30px;
     font: 1.45em 'Lato', sans-serif;
-    color: #919393;
+    color: #669bbb;
     text-transform: uppercase;
     font-weight: 900
 }
@@ -97,7 +83,7 @@ h2 {
 #main .mod_search h3 a {
     font: .9em 'Lato', sans-serif;
     text-decoration: none;
-    color: #919393;
+    color: #669bbb;
     text-transform: uppercase;
     font-weight: 900
 }
