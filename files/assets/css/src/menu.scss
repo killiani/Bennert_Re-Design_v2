@@ -1,7 +1,7 @@
 @import "variables";
 
 html.mobile_menu_active{
-  overflow-y: hidden;
+  //overflow-y: hidden;
 }
 
 //_____________________________Desktop MobileMenu
@@ -16,6 +16,12 @@ html.mobile_menu_active{
     nav.mod_navigation{
       margin: 370px auto 0 auto;
       max-width: 1200px;
+      a:before, strong:before{
+        content: url("/files/assets/icons/arrow_right_white.svg");
+        width: 7px;
+        display: inline-block;
+        margin-right: 7px;
+      }
     }
 
 
@@ -27,7 +33,9 @@ html.mobile_menu_active{
       color: white;
       text-transform: uppercase;
       transition: 0.4s;
+      font-size: 1.1em;
     }
+
     strong.active{
       color: $yellow;
     }
@@ -46,11 +54,11 @@ html.mobile_menu_active{
         a.submenu, strong.submenu{
           width: 100%;
           display: block;
-          border-bottom: 2px solid white;
+          border-bottom: 1px solid white;
           margin: 0 0 10px 0;
           padding: 0 0 10px 0;
           font-size: 1.1em;
-          font-weight: 750;
+          //font-weight: 750;
         }
       }
     }

@@ -78,9 +78,15 @@
  //__test
 
   .mobile_menu {
-    .inner nav.mod_navigation{
-      margin: 143px 20px 0 20px;
+    .inner{
+      nav.mod_navigation{
+        margin: 143px 20px 0 20px;
+        a:before, strong:before{
+          content: unset;
+        }
+      }
     }
+
 
     .mobile_menu_footer {
       width: auto;
@@ -95,6 +101,8 @@
       align-content: center;
       flex-direction: column;
     }
+
+
 
     //
     a.submenu:after{
@@ -123,10 +131,18 @@
   }
 
 
+  //___________________________________Slider
 
-
-
-
+  .slider-control{
+    a{
+      top: 28%;
+    }
+  }
+  .slider-prev,
+  .slider-next {
+    width:48px;
+    height:48px;
+  }
 
 
   //_________________________________Footer

@@ -1,5 +1,12 @@
 @import "variables";
 
+body.header_image_small{
+  #header .inside{
+    height: 30vh;
+  }
+}
+
+
 #header{
   h2.claim{
     background-color: $blue_dark;
@@ -306,8 +313,7 @@
 #header .mod_navigation ul.level_2 li.active, #header .mod_navigation ul.level_2 li:hover {
   background: #721619 url("../../files/Layout/subnav_li.png") left center no-repeat
 }
-
-#header .mobil_logo, #header .mod_quicknav {
+#header .mod_quicknav {
   display: none
 }
 

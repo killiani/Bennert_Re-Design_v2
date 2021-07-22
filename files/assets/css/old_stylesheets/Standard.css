@@ -54,15 +54,7 @@ html {
     height: 100%
 }
 
-body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url("../../files/Layout/bg.gif");
-    background-position: left top;
-    background-repeat: repeat-x;
-    overflow-y: scroll
-}
+
 
 #wrapper {
     width: 100%;
@@ -181,17 +173,6 @@ body {
     border: 0px
 }
 
-#main .ce_form .submit {
-    margin-top: 20px;
-    padding: 1px 5px;
-    background-color: #919393;
-    border: 0px;
-    font: 1.2em 'Lato', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    cursor: pointer
-}
 
 #main .ce_form .widget-checkbox {
     margin-top: 29px
@@ -244,7 +225,8 @@ body {
 }
 
 #main .mod_search {
-    margin-top: 30px
+    margin-top: 30px;
+    min-height: 400px;
 }
 
 #main .mod_search .submit {
@@ -259,10 +241,7 @@ body {
 }
 
 #main .mod_search div {
-    border-top: 0px solid #c8c9c9;
-    border-right: 0px solid #c8c9c9;
-    border-bottom: 3px solid #c8c9c9;
-    border-left: 0px solid #c8c9c9
+    border-bottom: 2px solid #A8CBE0;
 }
 
 #main .mod_search div.formbody {

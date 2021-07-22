@@ -10,11 +10,11 @@ const desktop = new Vue({
             let c = this.checked;
 
             if (c) {
-                console.log('on');
+                //console.log('on');
                 this.checked = false;
                 enableScrolling();
             } else {
-                console.log('off');
+                //console.log('off');
                 this.checked = true;
                 totop();
                 stopScrolling();
@@ -55,11 +55,11 @@ const mobile = new Vue({
             let c = this.checked;
 
             if (c) {
-                console.log('on');
+                //console.log('on');
                 this.checked = false;
                 enableScrolling();
             } else {
-                console.log('off');
+                //console.log('off');
                 this.checked = true;
                 totop();
                 stopScrolling();

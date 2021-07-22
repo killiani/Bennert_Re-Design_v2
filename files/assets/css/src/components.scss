@@ -118,7 +118,7 @@
     .close{
       display: none;
     }
-    color: black !important;
+    color: $blue_dark !important;
   }
 }
 
@@ -354,5 +354,11 @@
 .mod_eventlist{
   border-bottom: 1px solid gray;
 }
+
+.mod_newsreader {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 
 
