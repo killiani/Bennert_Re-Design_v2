@@ -74,9 +74,26 @@ h3{
   }
 }
 
-.ce_text{
+.ce_text, .ce_hyperlink{
   max-width: 800px;
   margin: 0 auto;
+  a{
+    font-weight: 800 !important;
+  }
+  ul{
+    list-style: none;
+    margin-left: 20px;
+  }
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $blue_light; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -22px;
+    padding-left: 4px;
+    padding-right: 2px;
+  }
 }
 
 img{
@@ -89,17 +106,7 @@ img{
   margin: 0 auto 20px auto;
 }
 
-ul{
-  list-style: none;
-}
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: $blue_light; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: 0em; /* Also needed for space (tweak if needed) */
-}
+
 
 
 h2.claim{
@@ -183,4 +190,13 @@ h2.claim{
   position: absolute;
   transform: translateY(-46%) translateX(380px);
   z-index: 2;
+}
+
+.stoerer_2{
+  width: 115px;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-46%) translateX(380px);
+  z-index: 2;
+  bottom: -200px;
 }

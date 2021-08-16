@@ -2,6 +2,8 @@ $blue_dark: #122e5d;
 $blue_light: #669bbb;
 $blue_light_plus: #A8CBE0;
 
+$icon_dark: invert(13%) sepia(94%) saturate(1163%) hue-rotate(198deg) brightness(95%) contrast(96%);
+
 $yellow: #DCC25E;
 
 $secondary: #669bbb;
@@ -23,6 +25,7 @@ $opacity: 1;
   background: rgb(18,46,93);
   background: $grad_full;
 }
+
 
 
 $mint: green;
@@ -47,7 +50,7 @@ $font_2: 'Barlow Condensed';
 
 $green_icon: invert(81%) sepia(15%) saturate(1518%) hue-rotate(26deg) brightness(92%) contrast(93%);
 
-$content_size: 990px;
+$content_size: 1200px;
 $content_size_m: 1220px;
 $content_size_l: 1300px;
 

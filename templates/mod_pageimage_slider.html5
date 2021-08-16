@@ -1,0 +1,29 @@
+<?php global $objPage;
+     $collection = \FilesModel::findMultipleByUuids(deserialize($objPage->pageImageOrder)); // oder ->pageImage ohne Sortierung
+?>
+
+<div id="slideShow">
+
+    <?php if ($this->headline): ?>
+    <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+    <?php endif; ?>
+                    <?php
+                    #print_r($collection);
+
+                    foreach($collection as $image)
+                    {?>
+<!--                            <figure class="image_container">-->
+
+                        <?php
+                        echo '<img src="'.\Image::get($image->path, 3000, 2000).'" alt="">';
+                        ?>
+<!--                            </figure>-->
+
+                        <?php
+                    }?>
+<!--    <div class="next"></div>-->
+<!--    <div class="prev"></div>-->
+</div>
+
+
+

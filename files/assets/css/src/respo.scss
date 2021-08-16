@@ -32,7 +32,7 @@
     width: unset;
   }
 
-  .stoerer_1{
+  .stoerer_1, .stoerer_2{
     display: none;
   }
 
@@ -78,9 +78,16 @@
  //__test
 
   .mobile_menu {
+
+    display: none !important;
+
+    &.active{
+      display: block !important;
+    }
+
     .inner{
       nav.mod_navigation{
-        margin: 143px 20px 0 20px;
+        margin: 150px 20px 0 20px;
         a:before, strong:before{
           content: unset;
         }
@@ -119,7 +126,7 @@
       right: 20px;
     }
     ul.level_2{
-      margin-bottom: 20px;
+      margin: 0 0 0 10px;
     }
 
   }

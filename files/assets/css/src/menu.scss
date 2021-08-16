@@ -15,7 +15,7 @@ html.mobile_menu_active{
 
     nav.mod_navigation{
       margin: 370px auto 0 auto;
-      max-width: 1200px;
+      max-width: 1260px;
       a:before, strong:before{
         content: url("/files/assets/icons/arrow_right_white.svg");
         width: 7px;
@@ -63,6 +63,7 @@ html.mobile_menu_active{
       }
     }
     ul.level_2{
+      display: none;
       li{
         width: 100%;
         a, strong.active{
@@ -78,6 +79,10 @@ html.mobile_menu_active{
           border-bottom: 1px solid transparent;
         }
       }
+    }
+
+    ul.level_3{
+      display: none;
     }
   }
 

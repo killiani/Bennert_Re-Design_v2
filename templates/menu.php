@@ -14,9 +14,9 @@
 
 <div class="mobile_menu_footer">
     <div class="social_icons">
-        <a href="#"><img src="files/assets/icons/facebook.svg"></a>
-        <a href="#"><img src="files/assets/icons/instagram.svg"></a>
-        <a href="#"><img src="files/assets/icons/twitter.svg"></a>
+        <a target="_blank" href="https://de-de.facebook.com/Die-Bennert-Gruppe-264518513656823/"><img src="files/assets/icons/facebook.svg"></a>
+        <a target="_blank" href="#"><img src="files/assets/icons/instagram.svg"></a>
+        <a target="_blank" href="#"><img src="files/assets/icons/twitter.svg"></a>
     </div>
     <div class="imprint">
         {{insert_article::107}}
