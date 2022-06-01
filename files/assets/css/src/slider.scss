@@ -1,4 +1,4 @@
-
+@import 'variables';
 
 #slideShow {
   position: relative;
@@ -11,7 +11,7 @@
   display: none;
   left: 0;
   top: 0;
-  height: 80vh;
+  height: 60vh;
   object-fit: cover;
   width: 100%;
 }
@@ -32,4 +32,32 @@
   //background-color: #ccc;
   //cursor: pointer;
   //left: 0;
+}
+
+#main .mod_article .ce_sliderStart {
+  height: 500px;
+  margin-bottom: 200px;
+  .content-slider {
+    height: 100%;
+    .slider-wrapper {
+      height: 100%;
+      .ce_image {
+        height: 100%;
+        figure {
+          height: 100%;
+          background: #cecece;
+          img {
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main .mod_article .ce_sliderStart {
+    height: 300px;
+  }
 }

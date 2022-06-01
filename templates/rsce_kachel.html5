@@ -1,0 +1,10 @@
+<a class="tile <?php foreach($this->category as $category): ?><?= $category ?> <?php endforeach; ?>" href="{{link_url::<?= $this->link ?>}}">
+    <img src="{{file::<?= $this->image ?>}}">
+    <h3><?= $this->title ?></h3>
+    <div class="tile-overlay">
+        <p class="subheadline">
+            <span><?= $this->subheadline ?></span>
+        </p>
+    </div>
+    <div class="tile-background"></div>
+</a>

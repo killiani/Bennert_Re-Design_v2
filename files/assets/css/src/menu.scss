@@ -14,7 +14,7 @@ html.mobile_menu_active{
     overflow: unset;
 
     nav.mod_navigation{
-      margin: 370px auto 0 auto;
+      margin: 23vh auto 0 auto;
       max-width: 1260px;
       a:before, strong:before{
         content: url("/files/assets/icons/arrow_right_white.svg");
@@ -49,6 +49,7 @@ html.mobile_menu_active{
     ul.level_1{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       li.submenu{
         width: 100%;
         a.submenu, strong.submenu{
